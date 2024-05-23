@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 function Home() {
   return (
     <div className="homecontainer">
@@ -12,7 +13,7 @@ function Home() {
         Doppler.</p>
       <div>
         <button className="btns"><i class="fa-brands fa-apple"></i>MAC APP STORE</button>
-        <button className="btns" style={{ marginLeft: "10px" }}>BUY DIRECTLY <button className="btn1" style={{ borderRadius: "50px" }}>$5.99</button></button>
+       <Link to="payment"><button className="btns" style={{ marginLeft: "10px" }}>BUY DIRECTLY <button className="btn1" style={{ borderRadius: "50px" }}>$5.99</button></button></Link> 
       </div>
       <div>
         <h1 style={{ marginTop: "5%" }}><b>Themes. Unlimited themes.</b></h1>
